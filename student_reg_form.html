@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student_registration_form</title>
+    <style>
+        input:checked+label{
+            cursor: pointer;
+            color: red;
+        }
+        input:focus{
+            background-color: burlywood;
+        }
+        li:first-of-type{
+            color: red;
+            background-color: yellow;
+        }
+        li:last-of-type{
+            color: white;
+            background-color: black;
+        }
+        li:nth-child(2){
+            color: green;
+            background-color: aqua;
+        }
+        li:nth-child(3){
+            color: yellow;
+            background-color: brown;
+        }
+        fieldset{
+            background-color: rgb(250, 202, 183);
+        }
+        .bt{
+            background-color: brown;
+        }
+        .bt:hover{
+            background-color: aqua;
+        }
+        button{
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <form action="">
+        <fieldset>
+            <h1>SRF</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" placeholder="Enter your email">
+        <br>
+        <br>
+        <label for="pass">Password</label>
+        <input type="text" id="pass" placeholder="Enter your password">
+        <br>
+        <br>
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <div>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>REACT</li>
+        </ul>
+        </div>
+        <button class="bt">Submit</button>
+        <button disabled>Register</button>
+        </fieldset>
+    </form>
+    </center>
+    
+</body>
+</html>

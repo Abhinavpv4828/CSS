@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li:first-child{
+            color: brown;
+        }
+        li:last-child{
+            color: aqua;
+        }
+        li:nth-child(2){
+            color: green;
+        }
+        li:nth-child(3){
+            color: yellow;
+        }
+        button:disabled{
+            cursor: pointer;
+        }
+        input:checked+label{
+            cursor: pointer;
+            color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Frontend</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+    </ul>
+    <h3>backend</h3>
+    <ol>
+        <li>python</li>
+        <li>python</li>
+        <li>python</li>
+    </ol>
+    <button disabled>Submit</button>
+    <input type="checkbox" id="html">
+    <label for="html">HTML</label>
+</body>
+</html>
